@@ -1,0 +1,11 @@
+- name: test requirements
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+  - node_exporter
+
+  tasks:
+  - debug:
+      msg: "test"
